@@ -1,0 +1,184 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    
+    color: blue;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+ .hero-image {
+  height: 50vh;
+  width: auto;
+  filter: drop-shadow(0 0 0 0.6);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  backdrop-filter: hsla(0, 1%, 20%, 0.7);
+  background-color: #333;
+  margin-bottom: 2%;
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  header .hero-text button{
+    background-color: blue;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 8px;
+  }
+  header .hero-text button:hover{
+    background-color: navy;
+  }
+
+  section#overview{
+    margin-top: -20px;
+  }
+  
+  header h1 {
+    margin: 10px 0;
+  }
+  
+  nav{
+    background-color: #000;
+    padding: 5px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 2ms;
+  }
+  nav ul li a:hover {
+    background-color: #89888c;
+    padding: 20px;
+
+  }
+  nav ul li a:hover:active{
+    background-color: blue;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  section h2{
+    color: blue;
+  }
+  
+  section img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+  }
+  #curriculum ul{
+    display: flex;
+    gap: 10px;
+    padding: 1px;
+  }
+  #curriculum li{
+    list-style: none;
+    background-color: rgb(233, 236, 240);
+    padding: 12px;
+    border-radius: 2%;
+    text-align: center;
+  }
+  section h3{
+    color: blue;
+  }
+
+
+  .program-overview {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.program-overview h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    gap: 10px;
+    margin-left: 4%;
+}
+
+.overview-item {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: #c4cad1;
+  color: rgb(40, 12, 222);
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 15px;
+  clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+}
+.overview-item:nth-child(odd) {
+  margin-top: 50px; /* Adjust to stagger odd-numbered pentagons */
+}
+.overview-item {
+  padding :10px;
+}
+
+.overview-item:hover {
+    transform: scale(1.05);
+    background-color: #e2df11e1;
+}
